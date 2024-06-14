@@ -1,0 +1,149 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Principal">
+  <style>
+    .headers {
+      background-image: url("/BG1.png");
+      padding: 10px;
+      display: flex;
+      color: white;
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+      background-color: rgba(
+        255,
+        255,
+        255,
+        0.5
+      ); /* Fondo blanco semi-transparente */
+      align-items: center;
+    }
+
+    .col {
+      font-weight: bold;
+      font-size: 30px;
+      margin-left: 5%;
+    }
+
+    .col img {
+      height: 12%; /* Ajusta este valor según sea necesario */
+    }
+    .box {
+      display: flex;
+      background-color: white;
+      margin-top: 2%;
+    }
+    .midbox {
+      width: 80%;
+      align-items: center;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    .items {
+      color: #2f3782;
+      font-weight: bold;
+      font-size: 30px;
+      margin-left: 5%;
+    }
+  </style>
+  <div class="headers">
+    <div class="col">
+      <h2>Museo de Patología Universidad de la Sabana</h2>
+    </div>
+    <div class="col">
+      <img src="/Living.png" alt="Living" />
+    </div>
+    <div class="col">
+      <img src="/Logo.png" alt="Logo" />
+    </div>
+  </div>
+  <div class="box">
+    <div class="midbox">
+      <h1 style="font-size:40px;font-weight:bold;color:#2F3782;">Salas</h1>
+      <p style="font-size:30px;font-weight:light;">
+        Para el desarrollo de este proyecto se dividió cada espécimen en una
+        sala para el la categorización del órgano según el sistema corporal al
+        que este pertenece, encontramos las siguientes salas.
+      </p>
+      <div class="items">
+        <li>
+          <a href="Cardiovascular.html"><button>Cardio Vascular</button></a>
+        </li>
+        <li><a href="Digestivo.html"><button>Digestivo</button></a></li>
+        <li>
+          <a href="Higado_y_Via_Viliar.html"
+            ><button>Hígado y Vía Biliar</button></a>
+        </li>
+        <li><a href="Endocrino.html"><button>Endocrino</button></a></li>
+        <li>
+          <a href="Renal_y_Via_Urinaria.html"
+            ><button>Renal y Vía Urinaria</button></a>
+        </li>
+        <li>
+          <a href="Genital_Masculino.html"
+            ><button>Genital Masculino</button></a>
+        </li>
+        <li>
+          <a href="Genital_Femenino.html"><button>Genital Femenino</button></a>
+        </li>
+      </div>
+    </div>
+    <div>
+      <img src="/Rectangle 2.png" style="height:100%;" />
+    </div>
+  </div>
+  <h1
+    style="font-size:40px;font-weight:bold;color:#2F3782; margin-left:5%;margin-top:5%"
+  >
+    Equipo de ideacion
+  </h1>
+  <div class="box">
+    <div style="margin-left:5%;">
+      <img
+        src="/Ellipse 3.png"
+        style="margin-left:5%;width:90%;aling-items:center;display:flex;margin-top:10%"
+      />
+    </div>
+    <div style="margin-left:5%">
+      <h1 style="font-size:40px;font-weight:bold;color:#2F3782;margin-top:5%;">
+        Elga Johana
+      </h1>
+      <h1 style="font-size:20px;font-weight:light;color:#2F3782;">
+        Docente A cargo del Proyecto
+      </h1>
+      <p style="font-size:40px;font-weight:light;margin-top:5%">
+        Doctora en patologias y ciencia Biomedica.
+      </p>
+    </div>
+  </div>
+
+  <h1
+    style="font-size:40px;font-weight:bold;color:#2F3782; margin-left:5%;margin-top:5%;"
+  >
+    Equipo de Desarrollo
+  </h1>
+  <div class="box">
+    <div class="midbox">
+      <h1 style="font-size:40px;font-weight:bold;color:#2F3782;margin-top:5%;">
+        Juan Jose Riaño
+      </h1>
+      <h1 style="font-size:20px;font-weight:light;color:#2F3782;">
+        Lider del proyecto
+      </h1>
+      <p style="font-size:40px;font-weight:light;margin-top:5%">
+        Estudiante de Ingeniería Mecánica e Informática en quinto semestre. Su
+        campo de desarrollo es la innovacion por medio del diseño y desarrollo
+        web.
+      </p>
+    </div>
+    <div style="margin-right:5%;">
+      <img
+        src="/Ellipse 2.png"
+        style="width:100%;aling-items:center;display:flex;margin-top:10%;margin-bottom:10%;"
+      />
+    </div>
+  </div>
+</Layout>

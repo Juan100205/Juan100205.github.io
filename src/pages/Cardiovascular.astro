@@ -1,0 +1,136 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+---
+
+<Layout title="Principal">
+    <style>
+        .headers {
+            background-image: url('/image 2.png');
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            height: 80vh;
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semi-transparente */
+            align-items: center;
+        }
+
+        .header-row {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .col {
+            font-weight: bold;
+            font-size:2vw;;
+            margin-left: 5%;
+        }
+
+        .col img {
+            height: 12%; /* Ajusta este valor según sea necesario */
+        }
+
+        .button-row {
+            margin-top: 10px;
+        }
+
+        .box {
+            display: flex;
+            background-color: white;
+            margin-top: 2%;
+        }
+
+        .midbox {
+            width: 80%;
+            align-items: center;
+            margin-left: 5%;
+        }
+
+        .items {
+            color: #2F3782;
+            font-weight: bold;
+            font-size: 2vw;
+            margin-left: 5%;
+        }
+
+    </style>
+    <div class="headers">
+        <div class="header-row"style="margin-top:10%;margin-right:10%;margin-left:5%">
+            <div class="col" style="margin-right:25%">
+                <h2>Cardio Vascular</h2>
+            </div>
+            <div class="col">
+                <img src="/Living.png" alt="Living">
+            </div>
+            <div class="col">
+                <img src="/Logo.png" alt="Logo">
+            </div>
+        </div>
+        <div class="button-row">
+            <a href="Sala_cardiovascular.astro"><Button>Ingrese aqui</Button></a>
+        </div>
+    </div>
+    <div class="box">
+        <div class="midbox">
+            <h1 style="font-size:2vw;font-weight:bold;color:#2F3782;">
+                Organos
+            </h1>
+            <p style="font-size:2vw;font-weight:light;margin-bottom:5%">
+                En esta sala se presentan los organos relacionado a la vascularizacion de la sangre en el cuerpo, las patologias que
+                se encontraran en esta sala, seran:
+            </p>
+            <div class="items">
+                <li><a href="Infarto.astro"><button>Infarto Antiguo del miocardio</button></a></li>
+                <li><a href="Atero.astro"><button>Atero esclerosis aortica</button></a></li>
+                <li><a href="astro.html"><button>Trombo</button></a></li>
+            </div>
+        </div>
+        <div>
+            <img src="/Rectangle 3.png" style="height:100%;">
+        </div>
+    </div>
+    <div class="box">
+        <div style="margin-left:5%">
+            <h1 style="font-size:2vw;font-weight:bold;color:#2F3782;margin-top:5%;">
+                Infarto Antiguo del miocardio
+            </h1>
+            <p style="font-size:2vw;font-weight:light;margin-top:5%">
+                Un infarto antiguo del miocardio es un evento previo de infarto cardíaco que ha dejado una cicatriz permanente en el músculo del corazón. Ocurre debido a un bloqueo prolongado en una arteria coronaria que causó daño y muerte del tejido cardíaco, el cual fue reemplazado por tejido cicatricial no funcional.
+            </p>
+        </div>
+        <div>
+            <img src="/404error.jpg" style="margin-left:5%;width:4000px;aling-items:center;display:flex;margin-top:10%;opacity:0.5">
+        </div>
+    </div>
+    <h1 style="font-size:2vw;font-weight:bold;color:#2F3782; margin-left:5%;margin-top:5%">
+        Atero esclerosis aortica
+    </h1>
+    <div class="box">
+        <div>
+            <img src="/Rectangle 6.png" style="width:4000px;aling-items:center;display:flex;margin-top:10%;">
+        </div>
+        <div style="margin-left:5%">
+            <p style="font-size:2vw;font-weight:light;margin-top:5%;margin-right:5%">
+                La aterosclerosis aórtica es una condición en la cual se acumulan placas de ateroma (grasa, colesterol, calcio y otras sustancias) en la pared de la aorta, la arteria principal del cuerpo que lleva sangre desde el corazón al resto del organismo. Esta acumulación puede causar el engrosamiento y endurecimiento de la aorta, reduciendo su elasticidad y capacidad para transportar sangre de manera eficiente.
+            </p>
+        </div>
+    </div>
+    <div class="box">
+        <div style="margin-left:5%">
+            <h1 style="font-size:2vw;font-weight:bold;color:#2F3782;margin-top:5%;">
+                Trombo
+            </h1>
+            <p style="font-size:2vw;font-weight:light;margin-top:5%">
+                Un trombo es un coágulo de sangre que se forma dentro de un vaso sanguíneo o del corazón. A diferencia de un coágulo normal que se forma en respuesta a una lesión para detener el sangrado, un trombo se forma patológicamente y puede obstruir el flujo sanguíneo, causando complicaciones serias.
+            </p>
+        </div>
+        <div>
+            <img src="/Imagen 1.png" style="margin-bottom:10%;margin-left:5%;width:4000px;aling-items:center;display:flex;margin-top:10%;">
+        </div>
+    </div>
+</Layout>

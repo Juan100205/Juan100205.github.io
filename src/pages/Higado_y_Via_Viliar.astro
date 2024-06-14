@@ -1,0 +1,345 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+---
+
+<Layout title="Principal">
+  <style>
+    .headers {
+      background-image: url("/Higado_y_via_viliar.png");
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      height: 80vh;
+      background-size: cover;
+      background-position: center;
+      background-color: rgba(
+        255,
+        255,
+        255,
+        0.5
+      ); /* Fondo blanco semi-transparente */
+      align-items: center;
+    }
+
+    .header-row {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .col {
+      font-weight: bold;
+      font-size: 2vw;
+      margin-left: 5%;
+    }
+
+    .col img {
+      height: 12%; /* Ajusta este valor según sea necesario */
+    }
+
+    .button-row {
+      margin-top: 10px;
+    }
+
+    .box {
+      display: flex;
+      background-color: white;
+      margin-top: 2%;
+    }
+
+    .midbox {
+      width: 80%;
+      align-items: center;
+      margin-left: 5%;
+    }
+
+    .items {
+      color: #2f3782;
+      font-weight: bold;
+      font-size: 2vw;
+      margin-left: 5%;
+    }
+  </style>
+  <div class="headers">
+    <div
+      class="header-row"
+      style="margin-top:10%;margin-right:10%;margin-left:5%"
+    >
+      <div class="col" style="margin-right:25%">
+        <h2>Higado y via viliar</h2>
+      </div>
+      <div class="col">
+        <img src="/Living.png" alt="Living" />
+      </div>
+      <div class="col">
+        <img src="/Logo.png" alt="Logo" />
+      </div>
+    </div>
+    <div class="button-row">
+      <a href="Sala_cardiovascular.astro"><Button>Ingrese aqui</Button></a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="midbox">
+      <h1 style="font-size:2vw;font-weight:bold;color:#2F3782;">Organos</h1>
+      <p style="font-size:2vw;font-weight:light;margin-bottom:5%">
+        El hígado y la vía biliar son componentes cruciales del sistema
+        digestivo y del sistema hepatobiliar. Juntos, desempeñan funciones
+        vitales en el metabolismo, la desintoxicación y la digestión
+      </p>
+      <div class="items">
+        <li><a href="Infarto.astro"><button>Cirrosis</button></a></li>
+        <li>
+          <a href="Coleosistitis cronica.astro"
+            ><button>Coleosistitis cronica</button></a
+          >
+        </li>
+        <li>
+          <a href="Coleosistitis aguda.astro"
+            ><button>Coleosistitis aguda </button></a
+          >
+        </li>
+        <li>
+          <a href="Colesterolosis.astro"><button>Colesterolosis</button></a>
+        </li>
+        <li>
+          <a href="Calculos pigmentados.astro"
+            ><button>Calculos pigmentados </button></a
+          >
+        </li>
+        <li>
+          <a href="Calculos del colesterol.astro"
+            ><button>Calculos del colesterol </button></a
+          >
+        </li>
+        <li>
+          <a href="Hepatocarcinoma.astro"><button>Hepatocarcinoma</button></a>
+        </li>
+        <li>
+          <a href="Metastatis HepaticaAtresia.astro"
+            ><button>Metastatis HepaticaAtresia </button></a
+          >
+        </li>
+        <li>
+          <a href="Congenita de la guía biliar.astro"
+            ><button>Congenita de la guía biliar </button></a
+          >
+        </li>
+        <li><a href="Higado Graso.astro"><button>Higado Graso</button></a></li>
+      </div>
+    </div>
+    <div>
+      <img src="/Rectangle 21.png" style="width:50wv;" />
+    </div>
+  </div>
+  <div class="box">
+    <div style="margin-left:5%">
+      <h1 style="font-size:2vw;font-weight:bold;color:#2F3782;margin-top:5%;">
+        Cirrosis
+      </h1>
+      <p style="font-size:2vw;font-weight:light;margin-top:5%">
+        El hígado graso, también conocido como esteatosis hepática, es una
+        condición en la que se acumula exceso de grasa en las células del
+        hígado. Aunque la presencia de pequeñas cantidades de grasa en el hígado
+        es normal, cuando supera el 5-10% del peso del hígado se considera
+        patológico. Existen dos tipos principales de hígado graso: hígado graso
+        alcohólico y hígado graso no alcohólico
+      </p>
+    </div>
+    <div>
+      <img
+        src="/Rectangle 8.png"
+        style="margin-left:5%;width:500vh;aling-items:center;display:flex;margin-top:10%;"
+      />
+    </div>
+  </div>
+  <h1
+    style="font-size:2vw;font-weight:bold;color:#2F3782; margin-left:5%;margin-top:5%"
+  >
+    Coleosistitis cronica
+  </h1>
+  <div class="box">
+    <div>
+      <img
+        src="/Rectangle 9.png"
+        style="width:4000px;aling-items:center;display:flex;margin-top:10%;"
+      />
+    </div>
+    <div style="margin-left:5%">
+      <p style="font-size:2vw;font-weight:light;margin-top:5%;margin-right:5%">
+        La coleocistitis crónica es una inflamación prolongada de la vesícula
+        biliar, a menudo causada por cálculos biliares. Provoca dolor abdominal
+        recurrente, especialmente después de comer alimentos grasos. El
+        tratamiento incluye cambios en la dieta, medicamentos y, en casos
+        graves, cirugía para extirpar la vesícula biliar.
+      </p>
+    </div>
+  </div>
+  <div class="box">
+    <div style="margin-left:5%">
+      <h1 style="font-size:2vw;font-weight:bold;color:#2F3782;margin-top:5%;">
+        Coleosistitis aguda
+      </h1>
+      <p style="font-size:2vw;font-weight:light;margin-top:5%">
+        La colecistitis aguda es una inflamación súbita de la vesícula biliar,
+        usualmente causada por un cálculo biliar que bloquea el conducto.
+        Produce dolor abdominal intenso, fiebre y náuseas. El tratamiento
+        generalmente incluye hospitalización, antibióticos y a menudo cirugía
+        para extirpar la vesícula.
+      </p>
+    </div>
+    <div>
+      <img
+        src="/Rectangle 10.png"
+        style="margin-bottom:10%;margin-left:5%;width:2000px;aling-items:center;display:flex;margin-top:10%;"
+      />
+    </div>
+  </div>
+  <h1
+    style="font-size:2vw;font-weight:bold;color:#2F3782; margin-left:5%;margin-top:5%"
+  >
+    Colesterolosis
+  </h1>
+  <div class="box">
+    <div>
+      <img
+        src="/Rectangle 11.png"
+        style="width:2000px;aling-items:center;display:flex;margin-top:10%;"
+      />
+    </div>
+    <div style="margin-left:5%">
+      <p style="font-size:2vw;font-weight:light;margin-top:5%;margin-right:5%">
+        La colesterolosis es la acumulación de colesterol en la pared de la
+        vesícula biliar, formando pequeños pólipos. Por lo general, no causa
+        síntomas y se descubre incidentalmente. No suele requerir tratamiento,
+        pero en casos graves puede requerir la extirpación de la vesícula.
+      </p>
+    </div>
+  </div>
+  <div class="box">
+    <div style="margin-left:5%">
+      <h1 style="font-size:2vw;font-weight:bold;color:#2F3782;margin-top:5%;">
+        Calculos pigmentados
+      </h1>
+      <p style="font-size:2vw;font-weight:light;margin-top:5%">
+        Los cálculos pigmentados son depósitos en la vesícula biliar compuestos
+        principalmente de bilirrubina. Son menos comunes que los cálculos de
+        colesterol y pueden causar síntomas similares. A menudo están
+        relacionados con condiciones médicas subyacentes y pueden requerir
+        tratamiento, como la extirpación quirúrgica de la vesícula.
+      </p>
+    </div>
+    <div>
+      <img
+        src="/404error.jpg"
+        style="margin-bottom:10%;margin-left:5%;width:3000px;aling-items:center;display:flex;margin-top:10%;opacity:0.5;"
+      />
+    </div>
+  </div>
+  <h1
+    style="font-size:2vw;font-weight:bold;color:#2F3782; margin-left:5%;margin-top:5%"
+  >
+    Calculos del colesterol
+  </h1>
+  <div class="box">
+    <div>
+      <img
+        src="/Imagen 2.png"
+        style="width:2000px;aling-items:center;display:flex;margin-top:10%;"
+      />
+    </div>
+    <div style="margin-left:5%">
+      <p style="font-size:2vw;font-weight:light;margin-top:5%;margin-right:5%">
+        Los cálculos del colesterol son depósitos que se forman en la vesícula
+        biliar, compuestos principalmente de colesterol. Son los tipos más
+        comunes de cálculos biliares. Pueden causar síntomas como dolor
+        abdominal y suelen requerir tratamiento si causan complicaciones, como
+        la extirpación quirúrgica de la vesícula biliar.
+      </p>
+    </div>
+  </div>
+  <div class="box">
+    <div style="margin-left:5%">
+      <h1 style="font-size:2vw;font-weight:bold;color:#2F3782;margin-top:5%;">
+        Hepatocarcinoma
+      </h1>
+      <p style="font-size:2vw;font-weight:light;margin-top:5%">
+        El hepatocarcinoma es un cáncer que se origina en el hígado, comúnmente
+        asociado con la cirrosis hepática. Los síntomas incluyen dolor abdominal
+        y pérdida de peso. El tratamiento puede involucrar cirugía,
+        quimioterapia o radioterapia.
+      </p>
+    </div>
+    <div>
+      <img
+        src="/404error.jpg"
+        style="margin-bottom:10%;margin-left:5%;width:2000px;aling-items:center;display:flex;margin-top:10%;opacity:0.5;"
+      />
+    </div>
+  </div>
+  <h1
+    style="font-size:2vw;font-weight:bold;color:#2F3782; margin-left:5%;margin-top:5%"
+  >
+    Metastatis Hepatica
+  </h1>
+  <div class="box">
+    <div>
+      <img
+        src="/Rectangle 15.png"
+        style="width:2000px;aling-items:center;display:flex;margin-top:10%;"
+      />
+    </div>
+    <div style="margin-left:5%">
+      <p style="font-size:2vw;font-weight:light;margin-top:5%;margin-right:5%">
+        La metástasis hepática es la propagación de cáncer desde otro órgano al
+        hígado. Los síntomas pueden incluir dolor abdominal y pérdida de peso.
+        El tratamiento depende del tipo y la extensión del cáncer primario.
+      </p>
+    </div>
+  </div>
+  <div class="box">
+    <div style="margin-left:5%">
+      <h1 style="font-size:2vw;font-weight:bold;color:#2F3782;margin-top:5%;">
+        Atresia Congenita de la vía biliar
+      </h1>
+      <p style="font-size:2vw;font-weight:light;margin-top:5%">
+        La atresia de vías biliares es una obstrucción congénita de los
+        conductos biliares que causa daño hepático. Se presenta con ictericia en
+        recién nacidos y requiere cirugía para corregirla.
+      </p>
+    </div>
+    <div>
+      <img
+        src="/Rectangle 16.png"
+        style="margin-bottom:10%;margin-left:5%;width:2000px;aling-items:center;display:flex;margin-top:10%;"
+      />
+    </div>
+  </div>
+  <h1
+    style="font-size:2vw;font-weight:bold;color:#2F3782; margin-left:5%;margin-top:5%"
+  >
+    Higado Graso
+  </h1>
+  <div class="box">
+    <div>
+      <img
+        src="/Rectangle 17.png"
+        style="width:4000px;aling-items:center;display:flex;margin-top:10%;margin-bottom:10%;"
+      />
+    </div>
+    <div style="margin-left:5%">
+      <p style="font-size:2vw;font-weight:light;margin-top:5%;margin-right:5%">
+        El hígado graso es una afección en la que se acumula grasa en las
+        células del hígado. Puede ser causado por factores como la obesidad, la
+        diabetes, el consumo excesivo de alcohol y la dieta poco saludable. A
+        menudo es asintomático, pero en algunos casos puede causar fatiga, dolor
+        abdominal y aumento del tamaño del hígado. El tratamiento implica
+        cambios en el estilo de vida, como una dieta saludable y ejercicio, así
+        como el control de las condiciones subyacentes.
+      </p>
+    </div>
+  </div>
+</Layout>

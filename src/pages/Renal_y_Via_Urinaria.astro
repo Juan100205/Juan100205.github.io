@@ -1,0 +1,125 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+---
+
+<Layout title="Principal">
+  <style>
+    .headers {
+      background-image: url("/Renal.png");
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      height: 80vh;
+      background-size: cover;
+      background-position: center;
+      background-color: rgba(
+        255,
+        255,
+        255,
+        0.5
+      ); /* Fondo blanco semi-transparente */
+      align-items: center;
+    }
+
+    .header-row {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .col {
+      font-weight: bold;
+      font-size: 2vw;
+      margin-left: 5%;
+    }
+
+    .col img {
+      height: 12%; /* Ajusta este valor según sea necesario */
+    }
+
+    .button-row {
+      margin-top: 10px;
+    }
+
+    .box {
+      display: flex;
+      background-color: white;
+      margin-top: 2%;
+    }
+
+    .midbox {
+      width: 80%;
+      align-items: center;
+      margin-left: 5%;
+    }
+
+    .items {
+      color: #2f3782;
+      font-weight: bold;
+      font-size: 2vw;
+      margin-left: 5%;
+    }
+  </style>
+  <div class="headers">
+    <div
+      class="header-row"
+      style="margin-top:10%;margin-right:10%;margin-left:5%"
+    >
+      <div class="col" style="margin-right:25%">
+        <h2>Renal y Via Urinaria</h2>
+      </div>
+      <div class="col">
+        <img src="/Living.png" alt="Living" />
+      </div>
+      <div class="col">
+        <img src="/Logo.png" alt="Logo" />
+      </div>
+    </div>
+    <div class="button-row">
+      <a href="Sala_cardiovascular.astro"><Button>Ingrese aqui</Button></a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="midbox">
+      <h1 style="font-size:2vw;font-weight:bold;color:#2F3782;">Organos</h1>
+      <p style="font-size:2vw;font-weight:light;margin-bottom:5%">
+        El sistema renal y las vías urinarias son responsables de producir y
+        eliminar la orina del cuerpo. Esto incluye los riñones, que filtran la
+        sangre, los uréteres que transportan la orina a la vejiga, y la vejiga,
+        donde se almacena hasta que se elimina a través de la uretra. Problemas
+        como infecciones urinarias o cálculos renales pueden afectar este
+        sistema y requerir tratamiento.
+      </p>
+      <div class="items">
+        <li>
+          <a href="Infarto_int.astro"><button>Carcinoma Renal </button></a>
+        </li>
+      </div>
+    </div>
+    <div>
+      <img src="/Rectangle 51.png" style="height:100%;margin-left:5%; " />
+    </div>
+  </div>
+  <div class="box">
+    <div style="margin-left:5%">
+      <h1 style="font-size:2vw;font-weight:bold;color:#2F3782;margin-top:5%;">
+        Carcinoma Renal
+      </h1>
+      <p style="font-size:2vw;font-weight:light;margin-top:5%">
+        El carcinoma renal es un cáncer que se origina en los riñones. Los
+        síntomas pueden incluir dolor en el costado, sangre en la orina, fatiga
+        y pérdida de peso. El tratamiento depende de la extensión del cáncer y
+        puede incluir cirugía, radioterapia o quimioterapia.
+      </p>
+    </div>
+    <div>
+      <img
+        src="/404error.jpg"
+        style="margin-bottom:10%;margin-left:5%;width:500vh;aling-items:center;display:flex;margin-top:10%;opacity:0.5"
+      />
+    </div>
+  </div>
+</Layout>

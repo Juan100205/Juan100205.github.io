@@ -1,0 +1,123 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+---
+
+<Layout title="Principal">
+  <style>
+    .headers {
+      background-image: url("/Digestivo Banner.png");
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      height: 80vh;
+      background-size: cover;
+      background-position: center;
+      background-color: rgba(
+        255,
+        255,
+        255,
+        0.5
+      ); /* Fondo blanco semi-transparente */
+      align-items: center;
+    }
+
+    .header-row {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .col {
+      font-weight: bold;
+      font-size: 2vw;
+      margin-left: 5%;
+    }
+
+    .col img {
+      height: 12%; /* Ajusta este valor según sea necesario */
+    }
+
+    .button-row {
+      margin-top: 10px;
+    }
+
+    .box {
+      display: flex;
+      background-color: white;
+      margin-top: 2%;
+    }
+
+    .midbox {
+      width: 80%;
+      align-items: center;
+      margin-left: 5%;
+    }
+
+    .items {
+      color: #2f3782;
+      font-weight: bold;
+      font-size: 2vw;
+      margin-left: 5%;
+    }
+  </style>
+  <div class="headers">
+    <div
+      class="header-row"
+      style="margin-top:10%;margin-right:10%;margin-left:5%"
+    >
+      <div class="col" style="margin-right:25%">
+        <h2>Digestivo</h2>
+      </div>
+      <div class="col">
+        <img src="/Living.png" alt="Living" />
+      </div>
+      <div class="col">
+        <img src="/Logo.png" alt="Logo" />
+      </div>
+    </div>
+    <div class="button-row">
+      <a href="Sala_cardiovascular.astro"><Button>Ingrese aqui</Button></a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="midbox">
+      <h1 style="font-size:2vw;font-weight:bold;color:#2F3782;">Organos</h1>
+      <p style="font-size:2vw;font-weight:light;margin-bottom:5%">
+        El sistema digestivo es un conjunto de órganos y estructuras que
+        trabajan conjuntamente para descomponer los alimentos, absorber los
+        nutrientes esenciales y eliminar los desechos del cuerpo.
+      </p>
+      <div class="items">
+        <li>
+          <a href="Infarto_int.astro"><button>Infarto Intestinal </button></a>
+        </li>
+      </div>
+    </div>
+    <div>
+      <img src="/Digestivo1.png" style="height:100%;" />
+    </div>
+  </div>
+  <div class="box">
+    <div style="margin-left:5%">
+      <h1 style="font-size:2vw;font-weight:bold;color:#2F3782;margin-top:5%;">
+        Infarto Intestinal
+      </h1>
+      <p style="font-size:2vw;font-weight:light;margin-top:5%">
+        Un infarto antiguo del miocardio es un evento previo de infarto cardíaco
+        que ha dejado una cicatriz permanente en el músculo del corazón. Ocurre
+        debido a un bloqueo prolongado en una arteria coronaria que causó daño y
+        muerte del tejido cardíaco, el cual fue reemplazado por tejido
+        cicatricial no funcional.
+      </p>
+    </div>
+    <div>
+      <img
+        src="/5.png"
+        style="margin-bottom:10%;margin-left:5%;width:500vh;aling-items:center;display:flex;margin-top:10%;"
+      />
+    </div>
+  </div>
+</Layout>
