@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/rianodev/',
+  base: 'https://github.com/Juan100205/rianodev',
 });
