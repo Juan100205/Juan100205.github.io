@@ -1,40 +1,266 @@
+/* ===========================
+   IMPORTS
+=========================== */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
 @import "tailwindcss";
 
-
+/* ===========================
+   THEME CUSTOMIZATION
+=========================== */
 @theme {
-
-    --font-display: "JetBrains Mono";
-
+  --font-display: "JetBrains Mono";
 }
+
+/* ===========================
+   PLUGINS
+=========================== */
 @plugin 'tailwind-scrollbar';
+
+/* ===========================
+   BASE STYLES
+=========================== */
 body {
   background-color: #0E1126;
   color: white;
   font-family: 'JetBrains Mono', monospace;
 }
 
-
+/* ===========================
+   UTILITIES
+=========================== */
 @layer utilities {
-  /* Estado inicial: scrollbar invisible */
-  .scrollbar-transicion::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+  /* ===== Scrollbar Transitions ===== */
+
+/* Scrollbar con transición suave de color al hacer hover */
+.scrollbar-transicion::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-transicion::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-transicion::-webkit-scrollbar-thumb {
+  background-color: #0E1126;
+  border-radius: 4px;
+  transition: background-color 1s linear;
+}
+
+.scrollbar-transicion:hover::-webkit-scrollbar-thumb {
+  background-color: #A259FF;
+}
+
+/* Scrollbar para la sección de educación */
+.scrollbar-transicionedu::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-transicionedu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-transicionedu::-webkit-scrollbar-thumb {
+  background-color: #343544;
+  border-radius: 4px;
+  transition: background-color 1s linear;
+  opacity: 0.6;
+}
+
+.scrollbar-transicionedu:hover::-webkit-scrollbar-thumb {
+  background-color: #505050;
+  opacity: 1;
+}
+
+  
+  
+
+  /* ===== Scroll Animations ===== */
+  @keyframes slideUpFadeIn {
+    0% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 
-  .scrollbar-transicion::-webkit-scrollbar-track {
-    background: transparent;
+  @keyframes slideUpFadeOut {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
   }
 
-  .scrollbar-transicion::-webkit-scrollbar-thumb {
-    background-color: #0E1126;
-    border-radius: 4px;
-    transition: background-color 1s linear;
+  .fade-in {
+    animation: slideUpFadeIn 0.5s ease-out forwards;
   }
 
-  /* Al hacer hover: aparece suavemente */
-  .scrollbar-transicion:hover::-webkit-scrollbar-thumb {
-    background-color: #A259FF;
+  .fade-out {
+    animation: slideUpFadeOut 0.5s ease-out forwards;
   }
 }
 
+/* ===========================
+   ADDITIONAL EFFECTS
+=========================== */
+.scroll-fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.scroll-fade-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.scroll-fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.scroll-fade-up.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+
+@keyframes appear{
+  from {
+    opacity:0;
+    scale:0.5;
+
+  }  
+  to{
+    opacity:1;
+    scale:1;
+  }
+}
+
+@keyframes disappear{
+  from {
+    opacity:1;
+    scale:1;
+
+  }  
+  to{
+    opacity:0;
+    scale:0.5;
+  }
+}
+@keyframes disappear_header{
+  from {
+    opacity:1;
+    scale:1;
+  
+
+  }  
+  to{
+    opacity:0;
+    scale:0.5;
+  }
+}
+
+
+.anim_block {
+  animation: 
+    appear ease-in-out,
+    disappear ease-in-out;
+  animation-timeline: 
+    view(), 
+    view();
+  animation-range: 
+    entry 0% cover 40%, 
+    exit 20% cover 100%;
+}
+.outer_block {
+  animation: 
+    disappear ease-in-out;
+  animation-timeline: 
+
+    view();
+  animation-range: 
+    exit 10% ;
+}
+
+.outer_header {
+  animation: 
+  disappear ease-in-out;
+  animation-timeline: 
+
+    view();
+  animation-range: 
+    exit 0% ;
+}
+
+.bg_opacity_img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/src/assets/Pics/Services.jpeg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  border-radius: 2rem; /* Ajusta si tu imagen tiene border-radius */
+  z-index: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Animación para fade-in de los bloques educativos */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Animación de fondo para los botones tipo ventana */
+@keyframes buttonPopup {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.button-popup {
+  animation: buttonPopup 0.3s ease-out forwards;
+}

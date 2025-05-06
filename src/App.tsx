@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import './App.css'
 import Header from './Components/Header.tsx'
 import Home from './Components/Home.tsx'
@@ -10,21 +10,42 @@ import Services from './Components/Services.tsx'
 import Education from './Components/Education.tsx'
 import Footer from './Components/Footer.tsx'
 function App() {
-    return (
-      <div>
-        <>
-        <Header/>
-        <Home/>
-        <About_me/>
-        <Tech_stack/>
-        <Projects/>
-        <Experiences/>
-        <Services/>
-        <Education/>
-        <Footer/>
-        </>
+  return (
+    <div className="scroll-smooth"> 
+      <Header />
+
+      <div id="home">
+        <Home />
       </div>
+
+      <div id="about">
+        <About_me />
+      </div>
+
+      <div id="skills">
+        <Tech_stack />
+      </div>
+
+      <div id="projects">
+        <Projects />
+      </div>
+
+      <div id="experiences">
+        <Experiences />
+      </div>
+
+      <div id="services">
+        <Services />
+      </div>
+
+      <div id="education">
+        <Education />
+      </div>
+
+      <Footer />
+    </div>
   );
-};
+}
+
 
 export default App;

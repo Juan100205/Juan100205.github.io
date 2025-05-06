@@ -5,7 +5,7 @@ const Logo_Astro = ({
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="w-full"
+    className="w-full transition-transform transform hover:scale-110 cursor-pointer"
     viewBox="0 0 32 32"
     fill={color}
   >

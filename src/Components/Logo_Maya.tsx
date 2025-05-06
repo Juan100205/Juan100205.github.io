@@ -1,6 +1,6 @@
 const Logo_Maya = () => {
     return (
-      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className="w-full" viewBox="0 0 32 32">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className="w-full transition-transform transform hover:scale-110 cursor-pointer" viewBox="0 0 32 32">
       <defs>
         <linearGradient id="a" x1="-611.348" y1="-67.488" x2="-600.272" y2="-65.335" gradientTransform="matrix(1.437, 0, 0, -1.437, 894.417, -82.292)" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#0f6067" />

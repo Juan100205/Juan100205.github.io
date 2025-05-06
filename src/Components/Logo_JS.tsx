@@ -2,7 +2,7 @@ const Logo_JS = () => {
     return (
       <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-full"
+      className="w-full transition-transform transform hover:scale-110 cursor-pointer"
       viewBox="0 0 24 24"
       style={{ fill: "rgba(255, 255, 255, 1)" }}
     >
