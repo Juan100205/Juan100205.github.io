@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const Consultoria_icon = () => {
   return (
