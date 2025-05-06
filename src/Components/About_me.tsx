@@ -1,5 +1,6 @@
 // About_me.tsx
 import { motion } from "framer-motion";
+import aboutMeImage from '../assets/Pics/About_me.jpeg';
 
 const About_me = () => {
   return (
@@ -44,7 +45,7 @@ const About_me = () => {
         <div className="w-3/7 flex items-center justify-center">
           <motion.img
             className="w-4/6 rounded-4xl"
-            src="./src/assets/Pics/About_me.jpeg"
+            src={aboutMeImage}
             alt="About me"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
