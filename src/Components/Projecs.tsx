@@ -25,7 +25,7 @@ function Projects() {
                 <Project_card
                     project="Laboratorios Edificio C"
                     description="Aplicación de realidad virtual para la capacitación e inmersión en los laboratorios de ingeniería de la Universidad de La Sabana."
-                    image="./src/assets/Pics/LABC.jpg"
+                    image="https://raw.githubusercontent.com/Juan100205/rianodev/main/src/assets/Pics/LABC.jpg"
                     technologies={
                         <>
                             <Logo_GitHub />

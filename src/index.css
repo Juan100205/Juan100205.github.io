@@ -205,7 +205,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('/src/assets/Pics/Services.jpeg');
+  background-image: url('https://raw.githubusercontent.com/Juan100205/rianodev/main/src/assets/Pics/Services.jpeg');
   background-size: cover;
   background-position: center;
   opacity: 0.5;
