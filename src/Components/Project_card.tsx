@@ -14,9 +14,9 @@ interface Props{
 return (
     <div className="lg:flex w-15/16 m-auto outline-1 outline-gray-500 rounded-4xl bg-gradient-to-b from-cyan-600 to-slate-950 justify-between ">
         <div className="transition-all lg:w-2/5  lg:hover:w-3/6 hover:cursor-pointer">
-        <div className="bg-cover bg-center rounded-t-4xl lg:rounded-l-4xl h-full w-full"
+        <div className="bg-cover bg-center lg:rounded-none rounded-t-4xl lg:rounded-l-4xl h-full w-full"
             style={{ backgroundImage: `url(${image})` }}>
-                <div className="transition-all rounded-t-4xl bg-slate-950 opacity-50 hover:opacity-90 h-full w-full lg:rounded-l-4xl">
+                <div className="transition-all lg:rounded-none rounded-t-4xl bg-slate-950 opacity-50 hover:opacity-90 h-full w-full lg:rounded-l-4xl">
                     <div className="transition-all opacity-0 hover:opacity-100 w-full h-full flex p-10">
                         {technologies}
                     </div>
