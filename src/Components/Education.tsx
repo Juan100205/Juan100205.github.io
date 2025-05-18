@@ -34,13 +34,13 @@ function Education() {
     <div className="w-2/3 mx-auto mb-50 anim_block mt-100 ">
       <h1 className="text-4xl font-black text-center">&lt;Education&gt;</h1>
 
-      <div className="mt-10 bg-gray-800 rounded-3xl w-full overflow-auto h-[600px] transition scrollbar-transicionedu">
+      <div className="mt-10 bg-gray-800 rounded-3xl w-full overflow-y-auto md:overflow-x-auto h-[600px] transition scrollbar-transicionedu">
         {/* Botones tipo ventana con animación de entrada */}
-        <div className="relative rounded-full bg-red-600 w-4 h-4 left-8 top-6 button-popup"></div>
-        <div className="relative rounded-full bg-yellow-300 w-4 h-4 left-15 top-2 button-popup"></div>
-        <div className="relative rounded-full bg-green-600 w-4 h-4 left-22 -top-2 button-popup"></div>
+        <div className="relative rounded-full bg-red-600 w-4 h-4 left-8 top-6 button-popup hover:cursor-pointer hover:scale-110"></div>
+        <div className="relative rounded-full bg-yellow-300 w-4 h-4 left-15 top-2 button-popup hover:cursor-pointer hover:scale-110"></div>
+        <div className="relative rounded-full bg-green-600 w-4 h-4 left-22 -top-2 button-popup hover:cursor-pointer hover:scale-110"></div>
 
-        <div className="px-10 py-10">
+        <div className="px-10 py-10 flex-warp">
           {eduBlocks.map((edu, index) => (
             <Edu
               key={index}
