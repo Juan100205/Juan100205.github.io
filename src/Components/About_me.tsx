@@ -4,18 +4,18 @@ import { motion } from "framer-motion";
 const About_me = () => {
   return (
     <motion.div
-      className="transition-all w-3/4  m-auto mb-100 anim_block  lg:bg-none flex-col bg-[url('https://raw.githubusercontent.com/Juan100205/rianodev/main/src/assets/Pics/About_me.jpeg')] bg-cover bg-center rounded-4xl lg:hover:scale-100 hover:scale-105"
+      className="transition-all w-3/4  m-auto md:mb-100 anim_block  lg:bg-none flex-col  bg-cover bg-center rounded-4xl lg:hover:scale-100 hover:scale-105"/*bg-[url('https://raw.githubusercontent.com/Juan100205/rianodev/main/src/assets/Pics/About_me.jpeg')]*/
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
     >
-      <div className=" transition-all hover:cursor-pointer lg:opacity-100 lg:hover:opacity-100 bg-black lg:bg-transparent   rounded-4xl opacity-50 hover:opacity-70 ">
-        <div className="p-15 lg:p-0">
+      <div className=" transition-all hover:cursor-pointer lg:opacity-100 lg:hover:opacity-100  lg:bg-transparent   rounded-4xl opacity-70 hover:opacity-90 ">
+        <div className="lg:p-15 p-7 lg:p-0">
       <h1 className="text-2xl font-bold ">&lt;/About me&gt;</h1>
       <div className="md:flex">
         <div className="lg:w-4/7">
-          <div className="lg:pt-10 lg:text-gray-500 md:text-gray-200 text-sm lg:text-xl md:text-md mt-10 items-center">
+          <div className="lg:pt-10  lg:text-gray-500 md:text-gray-200 text-sm lg:text-xl md:text-md mt-10 items-center">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

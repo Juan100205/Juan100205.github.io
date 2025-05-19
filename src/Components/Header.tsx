@@ -17,13 +17,16 @@ const Header = () => {
 
   return (
 <header
-  className={`sticky top-8 left-1/2 transform transform-all -translate-x-1/8 z-50 w-4/5 h-1/8 p-5 items-center justify-between rounded-4xl outline-1 outline-gray-800 transition-all duration-300 flex-wrap
+  className={` sticky  left-1/2 transform transform-all -translate-x-1/6  z-50 w-3/4 h-1/8  lg:px-20 px-10 py-2 items-center justify-between rounded-4xl outline-1 outline-gray-800 transition-all duration-300 flex-wrap
    flex
-    ${scrolled ? 'opacity-5 scale-90 hover:scale-100 hover:opacity-80'  : 'opacity-100 '}
-    bg-gradient-to-r from-blue-800 via-blue-900 to-[#0E1126]`}
+    ${scrolled ? 'sticky w-full top-0 rounded-none translate-x-0 opacity-100  bg-slate-900 lg:px-60'  : 'opacity-100 top-8 bg-slate-900'}
+     `}
 >
             <Logo_GitHub_nav />
-            <Nav />         
+            <Nav /> 
+            
+
+                    
       </header>
 
   );

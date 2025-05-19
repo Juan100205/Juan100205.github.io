@@ -17,7 +17,7 @@ const scrollToSection = (id: string) => {
       <>
         {/* Enlace Home */}
         <div
-          className="relative group transition-transform duration-300 ease-in-out hover:scale-105 hover:text-blue-400 cursor-pointer"
+          className="text-sm relative group transition-transform duration-300 ease-in-out hover:scale-105 hover:text-blue-400 cursor-pointer"
           onClick={() => scrollToSection('home')}
         >
           &lt;/Home&gt;
@@ -26,7 +26,7 @@ const scrollToSection = (id: string) => {
   
         {/* Enlace About Me */}
         <div
-          className="relative group transition-transform duration-300 ease-in-out hover:scale-105 hover:text-blue-400 cursor-pointer"
+          className="text-sm  relative group transition-transform duration-300 ease-in-out hover:scale-105 hover:text-blue-400 cursor-pointer"
           onClick={() => scrollToSection('about')}
         >
           &lt;/About_me&gt;
@@ -35,7 +35,7 @@ const scrollToSection = (id: string) => {
   
         {/* Enlace Skills */}
         <div
-          className="relative group transition-transform duration-300 ease-in-out hover:scale-105 hover:text-blue-400 cursor-pointer"
+          className="text-sm  relative group transition-transform duration-300 ease-in-out hover:scale-105 hover:text-blue-400 cursor-pointer"
           onClick={() => scrollToSection('skills')}
         >
           &lt;/Skills&gt;
@@ -44,7 +44,7 @@ const scrollToSection = (id: string) => {
   
         {/* Enlace Projects */}
         <div
-          className="relative group transition-transform duration-300 ease-in-out hover:scale-105 hover:text-blue-400 cursor-pointer"
+          className="text-sm  relative group transition-transform duration-300 ease-in-out hover:scale-105 hover:text-blue-400 cursor-pointer"
           onClick={() => scrollToSection('projects')}
         >
           &lt;/Projects&gt;
@@ -63,7 +63,7 @@ const Nav = () => {
   }
     return(
       <>
-        <nav className="w-1/2  flex justify-end">
+        <nav className="w-2/3  flex justify-end">
           <div className="hidden w-full justify-between lg:flex font-display font-light  text-lg ">
               <NavLinks />
           </div>

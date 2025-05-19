@@ -1,6 +1,6 @@
 const Logo_GitHub_nav = () => {
   return (
-    <div className="flex w-35  justify-between">
+    <div className="flex lg:w-25 w-20 gap-5  justify-between">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="w-15 h-15 text-white fill-current transition-transform transform hover:scale-110 cursor-pointer"

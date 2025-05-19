@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Home = () => {
   return (
     <motion.div
-      className="m-auto w-2/3 text-left pt-40 outer_block mb-100 "
+      className="m-auto w-2/3 text-left pt-40 outer_block md:mb-100 "
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}

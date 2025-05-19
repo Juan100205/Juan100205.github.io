@@ -5,7 +5,7 @@ import Logo_wha from "./Logo_whatsapp";
 
 function Footer() {
   return (
-    <div className="mt-20 bg-gradient-to-b from-[#0E1126] to-blue-800 py-12">
+    <div className="mt-20 bg-gradient-to-b from-blue-9500 to-cyan-800 py-12">
       <div className="text-4xl font-black text-center text-white animate__animated animate__fadeIn animate__delay-1s">
         Did you like it?
       </div>

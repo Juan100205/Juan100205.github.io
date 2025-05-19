@@ -17,11 +17,13 @@ import Logo_TS from "./Logo_TS";
 import Logo_UE from "./Logo_UE";
 import Logo_Unity from "./Logo_Unity";
 import Tech_card from "./Techn_Card";
+import { Database } from 'lucide-react';
+import Logo_SQL from "./Logo_MySql";
 
 function Tech_stack () {
     return (
         <motion.div
-            className="w-2/3 mx-auto mt-100 font-black anim_block"
+            className="w-2/3 mx-auto md:mt-100 font-black anim_block"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -55,6 +57,7 @@ function Tech_stack () {
                 <Tech_card name="Html" icon={<Logo_Html />} />
                 <Tech_card name="Css" icon={<Logo_Css />} />
                 <Tech_card name="DaVinci Resolve" icon={<Logo_DVR />} />
+                <Tech_card name="MySQLServer" icon={<Logo_SQL/>} />
             </motion.div>
         </motion.div>
     );

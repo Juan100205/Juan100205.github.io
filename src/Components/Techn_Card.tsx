@@ -7,7 +7,7 @@ interface Props {
 
 function Tech_card({ name, icon }: Props) {
   return (
-    <div className="group relative overflow-hidden ml-10 my-5 md:ml-1 mr-23 text-sm min-w-65 rounded-4xl outline-1 outline-gray-500 transition-transform hover:scale-105 cursor-pointer hover:font-bold">
+    <div className="group relative overflow-hidden ml-5 my-5 md:ml-1 mr-23 text-sm min-w-65 rounded-4xl outline-1 outline-gray-500 transition-transform hover:scale-105 cursor-pointer hover:font-bold">
       {/* Fondo original */}
       <div className="absolute inset-0 bg-gradient-to-b from-cyan-400 via-cyan-600 to-cyan-950 transition-opacity duration-500 opacity-100 group-hover:opacity-0" />
       

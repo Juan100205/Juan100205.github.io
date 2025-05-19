@@ -15,8 +15,8 @@ function Experience ({place,occ,date,s_skills}:Props){
   
         <div className="relative border-l-4 border-gray-600 ml-5 ">
 
-          <div className="mb-16 ml-6 relative">
-            <div className=" absolute -left-11.5 -top-2 w-10 h-10 bg-[#0E1126] border-6 border-blue-500 rounded-full z-10"></div>
+          <div className=" ml-6 relative">
+            <div className=" absolute -left-11.5 -top-2 w-10 h-10 bg-[#0d1544] border-6 border-blue-500 rounded-full z-10"></div>
             <h3 className="text-2xl font-bold">
             {place}
             </h3>

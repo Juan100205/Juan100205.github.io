@@ -15,7 +15,7 @@ function Services() {
     // Función que actualiza el offset según el ancho de la ventana
     const updateOffset = () => {
       const width = window.innerWidth;
-      setOffset(width < 768 ? 130 : 195);
+      setOffset(width < 768 ? 90 : 195);
     };
 
     // Ejecutar una vez al inicio
@@ -73,10 +73,10 @@ function Services() {
   
 
     return (
-      <div className="w-2/3 mx-auto mt-100 anim_block ">
+      <div className="w-full mx-auto md:mt-100 anim_block overflow-hidden">
         <h1 className="text-4xl font-black text-center">&lt;/Services&gt;</h1>
         <div>
-          <div className="relative w-[400px] h-[400px] md:w-[610px] md:h-[610px] mx-auto my-10 rounded-4xl bg_opacity_img">
+          <div className="relative w-[300px] h-[300px] md:w-[610px] md:h-[610px] mx-auto my-10 rounded-4xl bg_opacity_img">
             <div
               className="absolute w-5/6 h-5/6 rounded-full z-10 "
               style={{
@@ -137,7 +137,7 @@ function Services() {
       }}
     >
       {/* Contenedor principal con group */}
-      <div className="group relative md:translate-y-5 -translate-y-18  md:-translate-x-4 -translate-x-30 text-xs flex flex-col items-center justify-center text-gray-500 fill-gray-500 rounded-xl px-4 py-5 text-center w-[160px] hover:scale-105 transition-transform cursor-pointer">
+      <div className="group relative md:translate-y-8 -translate-y-32  md:-translate-x-3 -translate-x-42 text-xs flex flex-col items-center justify-center text-gray-500 fill-gray-500 rounded-xl px-4 py-5 text-center w-[160px] hover:scale-105 transition-transform cursor-pointer">
 
         {/* Ícono y título visibles siempre */}
         <div
