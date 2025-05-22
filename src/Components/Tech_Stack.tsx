@@ -17,7 +17,6 @@ import Logo_TS from "./Logo_TS";
 import Logo_UE from "./Logo_UE";
 import Logo_Unity from "./Logo_Unity";
 import Tech_card from "./Techn_Card";
-import { Database } from 'lucide-react';
 import Logo_SQL from "./Logo_MySql";
 
 function Tech_stack () {

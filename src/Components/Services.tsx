@@ -29,47 +29,56 @@ function Services() {
   }, []);
  
   const servicios = [
-    {
-      titulo: "Consultoría",
-      descripcion: "Me especializo en ofrecer consultoría estratégica para ayudarte a optimizar procesos y alcanzar tus metas de negocio de manera efectiva.",
-      icon: <Consultoria_icon />,
-    },
-    {
-      titulo: "Investigación",
-      descripcion: "Realizo investigaciones sobre nuevas tecnologías, tendencias emergentes y avances innovadores, ayudándote a estar a la vanguardia y tomar decisiones basadas en lo último del mercado.",
-      icon: <SearchIcon />,
-    },
-    {
-      titulo: "Desarrollo de Videojuegos",
-      descripcion: "Me apasiona crear experiencias de juegos interactivas y soluciones gamificadas que capturan la atención y fomentan la participación activa de los usuarios.",
-      icon: <GameIcon />,
-    },
-    {
-      titulo: "Desarrollo de Aplicaciones",
-      descripcion: "Diseño y desarrollo aplicaciones móviles personalizadas para satisfacer las necesidades específicas de tus usuarios y proporcionar una experiencia fluida y atractiva.",
-      icon: <AppIcon />,
-    },
-    {
-      titulo: "Desarrollo Web",
-      descripcion: "Especializado en crear sitios web visualmente atractivos y funcionales, enfocados en la experiencia del usuario y optimizados para un rendimiento excepcional.",
-      icon: <DevIcon />,
-    },
-    {
-      titulo: "Desarrollo 3D",
-      descripcion: "Ofrezco servicios de modelado, animacion, texutrizado 3d con calidad y acabados profesionales.",
-      icon: <DIcon />,
-    },
-    {
-      titulo: "Renderizado 3D",
-      descripcion: "Me especializo en el renderizado 3D de alta calidad, ofreciendo representaciones visuales realistas para arquitectura, diseño de productos y más.",
-      icon: <RenderIcon />,
-    },
-    {
-      titulo: "Diseño Web",
-      descripcion: "Diseño interfaces de usuario intuitivas y visualmente atractivas, asegurando una experiencia fluida y optimizada en todas las plataformas.",
-      icon: <DesignIcon />,
-    },
-  ];
+  {
+    title: "Consulting",
+    description:
+      "I specialize in providing strategic consulting to help you optimize processes and effectively achieve your business goals.",
+    icon: <Consultoria_icon />,
+  },
+  {
+    title: "Research",
+    description:
+      "I conduct research on new technologies, emerging trends, and innovative advancements, helping you stay ahead and make decisions based on the latest market developments.",
+    icon: <SearchIcon />,
+  },
+  {
+    title: "Game Development",
+    description:
+      "I'm passionate about creating interactive game experiences and gamified solutions that capture attention and encourage active user engagement.",
+    icon: <GameIcon />,
+  },
+  {
+    title: "App Development",
+    description:
+      "I design and develop customized mobile applications tailored to meet your users’ specific needs and deliver a smooth, engaging experience.",
+    icon: <AppIcon />,
+  },
+  {
+    title: "Web Development",
+    description:
+      "Specialized in creating visually appealing and functional websites focused on user experience and optimized for exceptional performance.",
+    icon: <DevIcon />,
+  },
+  {
+    title: "3D Development",
+    description:
+      "I offer 3D modeling, animation, and texturing services with professional quality and polished finishes.",
+    icon: <DIcon />,
+  },
+  {
+    title: "3D Rendering",
+    description:
+      "I specialize in high-quality 3D rendering, providing realistic visual representations for architecture, product design, and more.",
+    icon: <RenderIcon />,
+  },
+  {
+    title: "Web Design",
+    description:
+      "I design intuitive and visually appealing user interfaces, ensuring a smooth and optimized experience across all platforms.",
+    icon: <DesignIcon />,
+  },
+];
+
   
 
     return (
@@ -147,14 +156,14 @@ function Services() {
           }}
         >
           <h3 className="font-bold text-sm">{servicios[i].icon}</h3>
-          <p className="md:flex text-xs hidden">{servicios[i].titulo}</p>
+          <p className="md:flex text-xs hidden">{servicios[i].title}</p>
         </div>
 
         {/* Descripción oculta por defecto, aparece en hover sobre el ícono/título */}
         <div className="opacity-0 group-hover:opacity-100 transition-opacity absolute   text-white px-3 py-2 rounded-md z-50 text-xs w-[160px] text-center ">
-          <h1 className="font-bold md:text-sm mb-1">{servicios[i].titulo}</h1>
+          <h1 className="font-bold md:text-sm mb-1">{servicios[i].title}</h1>
           <div className="md:flex hidden">
-          {servicios[i].descripcion}
+          {servicios[i].description}
           </div>
         </div>
         

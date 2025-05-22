@@ -181,6 +181,17 @@ body {
     entry 0% cover 40%, 
     exit 20% cover 100%;
 }
+.anim_block_projects {
+  animation: 
+    appear ease-in-out,
+    disappear ease-in-out;
+  animation-timeline: 
+    view(), 
+    view();
+  animation-range: 
+    entry 0% cover 20%, 
+    exit 20% cover 100%;
+}
 .outer_block {
   animation: 
     disappear ease-in-out;

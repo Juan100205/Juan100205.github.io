@@ -8,8 +8,9 @@ interface Props{
     description:ReactNode;
     image:ReactNode;
     technologies:ReactNode;
+    link:ReactNode;
 }
-    function Project_card ({project,description,image,technologies}:Props){
+    function Project_card ({project,description,image,technologies,link}:Props){
 
 return (
     <div className="lg:flex w-90 md:w-15/16  outline-1 outline-gray-500 rounded-4xl bg-gradient-to-b from-cyan-600 to-slate-950 justify-between -translate-x-8 md:-translate-x-0">
@@ -34,7 +35,7 @@ return (
                     <div className="w-15">
                     <Logo_GitHub/>
                     </div>
-                    <button className="rounded-full transition-all w-30 md:w-50 h-10 outline-1 outline-gray-500 bg-slate-900 hover:bg-slate-950 hover:cursor-pointer hover:scale-110 md:mt-0 mt-5 mb-2">
+                    <button onClick={() => window.open(String(link), '_blank')} className="rounded-full transition-all w-30 md:w-50 h-10 outline-1 outline-gray-500 bg-slate-900 hover:bg-slate-950 hover:cursor-pointer hover:scale-110 md:mt-0 mt-5 mb-2">
                         Live View
                     </button>
                 </div>

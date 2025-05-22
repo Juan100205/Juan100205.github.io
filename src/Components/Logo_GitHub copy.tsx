@@ -2,6 +2,7 @@ const Logo_GitHub_nav = () => {
   return (
     <div className="flex lg:w-25 w-20 gap-5  justify-between">
     <svg
+      onClick={() => window.open("https://github.com/Juan100205", '_blank')}
       xmlns="http://www.w3.org/2000/svg"
       className="w-15 h-15 text-white fill-current transition-transform transform hover:scale-110 cursor-pointer"
       viewBox="0 0 24 24"
@@ -13,6 +14,7 @@ const Logo_GitHub_nav = () => {
       />
     </svg>
     <svg
+     onClick={() => window.open("https://www.linkedin.com/in/juan-jose-ria%C3%B1o-zabaleta-86320a2a3/", '_blank')}
       viewBox="0 0 24 24"
       style={{ fill: 'rgb(255, 255, 255)' }}
       className="transition-transform transform hover:scale-110 cursor-pointer w-15 h-15"

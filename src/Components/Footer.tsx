@@ -10,7 +10,11 @@ function Footer() {
         Did you like it?
       </div>
 
-      <div className="text-xl font-bold text-center rounded-4xl  outline-1 outline-gray-500 p-2 mt-10 w-50 transition-all cursor-pointer mx-auto bg-slate-900 hover:bg-slate-950 hover:cursor-pointer hover:scale-110 animate__animated animate__fadeIn animate__delay-2s">
+      <div 
+      onClick={() => window.open("https://wa.me/qr/5E4COJEFQ47SE1", '_blank')}
+      
+    
+      className="text-xl font-bold text-center rounded-4xl  outline-1 outline-gray-500 p-2 mt-10 w-50 transition-all cursor-pointer mx-auto bg-slate-900 hover:bg-slate-950 hover:cursor-pointer hover:scale-110 animate__animated animate__fadeIn animate__delay-2s">
         Contact me
       </div>
 

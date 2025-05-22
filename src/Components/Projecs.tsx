@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Logo_GitHub from "./Logo_GitHub";
 import Project_card from "./Project_card";
 import Logo_UE from "./Logo_UE";
 import Logo_Maya from "./Logo_Maya";
@@ -10,11 +9,12 @@ import Logo_Tailwind from "./Logo_Tailwind";
 import Logo_Unity from "./Logo_Unity";
 import Logo_Blender from "./Logo_Blender";
 import Logo_SQL from "./Logo_MySql";
+import Logo_Astro from "./Logo_Astro";
 
 function Projects() {
     return (
         <motion.div
-            className="w-2/3 mx-auto anim_block md:mt-100"
+            className="w-2/3 mx-auto anim_block_projects "
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -42,6 +42,7 @@ function Projects() {
                             <Logo_A3D/>
                         </>
                     }
+                    link={""}
                 />
                 
             </motion.div>
@@ -63,6 +64,7 @@ function Projects() {
                             <Logo_Tailwind/>
                         </>
                     }
+                    link={""}
                 />
             </motion.div>
             <motion.div
@@ -83,6 +85,7 @@ function Projects() {
                             <Logo_Tailwind/>
                         </>
                     }
+                    link={""}
                 />
             </motion.div>
             <motion.div
@@ -106,6 +109,7 @@ function Projects() {
                             <Logo_Blender/>
                         </>
                     }
+                    link={""}
                 />
             </motion.div>
             <motion.div
@@ -128,6 +132,7 @@ function Projects() {
                             <Logo_Blender/>
                         </>
                     }
+                    link={""}
                 />
             </motion.div>
             <motion.div
@@ -139,9 +144,8 @@ function Projects() {
             >
                 <Project_card
                     project="Instagram API"
-                    description="An interactive metaverse-based application designed for onboarding new students or staff within an educational institution. Users can navigate through virtual environments that replicate key campus areas (such as classrooms, labs, offices, etc.), where informative videos are played in each section to introduce services, rules, institutional culture, and academic resources. This immersive experience enhances understanding and engagement during the induction process in a modern and innovative way.
+                    description="An API integration that enables access to Instagram data such as user profiles, media posts, comments, hashtags, and analytics. Ideal for building social media dashboards, automating content management, or analyzing engagement and reach on the platform."
 
-"
                     image="https://i.pinimg.com/736x/7f/1e/d2/7f1ed2cb9f6ee758e66b4c51055dd8a5.jpg"
                     technologies={
                         <>
@@ -150,7 +154,30 @@ function Projects() {
                             <Logo_Tailwind/>
                             <Logo_SQL/>
                         </>
+                        
                     }
+                    link={""}
+                />
+            </motion.div>
+                        <motion.div
+                className="mt-20"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: true }}
+            >
+                <Project_card
+                    project="Space X API"
+                    description="A RESTful API that provides detailed information about SpaceX launches, rockets, payloads, launchpads, crew, and more. It allows developers to access real-time and historical data to build apps, dashboards, or conduct research related to SpaceX missions and technology."
+
+                    image="https://www.thestreet.com/.image/t_share/MjAxNDQ4NzE2MTczODQ2MDY5/spacex_lead_db_101223.jpg"
+                    technologies={
+                        <>
+                            <Logo_Astro/>
+                            <Logo_Tailwind/>
+                        </>
+                    }
+                    link={"https://github.com/Juan100205/Astro_course"}
                 />
             </motion.div>
         </motion.div>

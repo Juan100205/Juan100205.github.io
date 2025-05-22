@@ -1,6 +1,7 @@
 function Logo_wha() {
   return (
     <svg
+          onClick={() => window.open("https://wa.me/qr/5E4COJEFQ47SE1", '_blank')}
       xmlns="http://www.w3.org/2000/svg"
       className="w-full h-full transition-transform transform hover:scale-110 cursor-pointer"
       viewBox="0 0 24 24"
